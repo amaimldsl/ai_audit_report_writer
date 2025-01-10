@@ -6,9 +6,9 @@ ai_finding_writing_task:
     to evaluate the condition. The Cause identifies the root reason for the difference between the 
     condition and criteria, answering why the issue occurred. The Effect outlines the risk 
     or consequence of the gap between condition and criteria, which can be either existing or 
-    potential. And finally the Managament Action, which summarize the needed management actions
+    potential. And finally the Management Action, which summarize the needed management actions
     as practical, feasible solution to mitigate the risks identified in the finding to elicit a 
-    positive action.Inline with above, write the audit finding that statifies the above conditions.
+    positive action. Inline with above, write the audit finding that stratifies the above conditions.
 
 
   expected_output: >
@@ -17,12 +17,12 @@ ai_finding_writing_task:
     
     Finding:
     -->     Explain the finding while outlining the relation between {finding_condition}, {finding_criteria} and
-    {finding_cause}; without explicitly stating the follwoing words: condition, criteria and cause.
+    {finding_cause}; without explicitly stating the following words: condition, criteria and cause.
 
     Risks:
     -->    Explain the risk or consequence of the gap {finding_effect}.
 
-    Managment Action:
+    Management Action:
     -->    Suggest a management action inline with {management_action}
   agent: ai_finding_writer
 
@@ -34,11 +34,11 @@ gia_ai_finding_writing_task:
       to evaluate the condition. The Cause identifies the root reason for the difference between the 
       condition and criteria, answering why the issue occurred. The Effect outlines the risk 
       or consequence of the gap between condition and criteria, which can be either existing or 
-      potential. And finally the Managament Action, which summarize the needed management actions
+      potential. And finally the Management Action, which summarize the needed management actions
       as practical, feasible solution to mitigate the risks identified in the finding to elicit a 
-      positive action.Inline with above, write the audit finding that statifies the above conditions.
+      positive action. Inline with above, write the audit finding that stratifies the above conditions.
 
-      The finding writeup should follow the follwing rules:
+      The finding writeup should follow the following GIA finding writing guidelines:
 
         -Observation title should be short, clear, and non-negative.
         -Title should focus on the subject, not observation details.
@@ -73,7 +73,7 @@ gia_ai_finding_writing_task:
             -Compensating controls.
             -Monitoring or exception reports.
             -System issues (if any).
-            -Timeframe of the issue.
+            -Time frame  of the issue.
             -Impact assessment.
       
 
@@ -83,11 +83,11 @@ gia_ai_finding_writing_task:
     
     Finding:
     --->     Explain the finding while outlining the relation between {finding_condition}, {finding_criteria} and
-    {finding_cause}, without explicitly stating the follwoing words: condition, criteria and cause.
+    {finding_cause}, without explicitly stating the following words: condition, criteria and cause.
 
     Risks:
     -->    Explain the risk or consequence of the gap {finding_effect}.
 
-    Managment Action:
+    Management Action:
     -->    Suggest a management action inline with {management_action}
   agent: gia_ai_finding_writer
